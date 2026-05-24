@@ -1,3 +1,0 @@
-ninja_dyndep_version = 1.0
-build External/FMT/CMakeFiles/fmt-c.dir/src/fmt-c.cc.obj: dyndep
-

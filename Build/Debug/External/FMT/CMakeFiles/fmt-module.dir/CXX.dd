@@ -1,4 +1,0 @@
-ninja_dyndep_version = 1.0
-build External/FMT/CMakeFiles/fmt-module.dir/src/fmt.cc.obj | External/FMT/CMakeFiles/fmt-module.dir/fmt.pcm: dyndep
-  restat = 1
-
