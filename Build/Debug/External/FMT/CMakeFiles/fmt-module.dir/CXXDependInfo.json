@@ -1,0 +1,45 @@
+{
+	"bmi-installation" : null,
+	"compiler-frontend-variant" : "GNU",
+	"compiler-id" : "Clang",
+	"compiler-simulate-id" : "MSVC",
+	"config" : "Debug",
+	"cxx-modules" : 
+	{
+		"External/FMT/CMakeFiles/fmt-module.dir/src/fmt.cc.obj" : 
+		{
+			"bmi-only" : false,
+			"compile-features" : 
+			[
+				"cxx_std_20"
+			],
+			"compile-options" : [],
+			"definitions" : [],
+			"destination" : null,
+			"include-directories" : 
+			[
+				"N:/User_Space/User_Documents/Git_Clones/Tool_N/External/FMT/include"
+			],
+			"name" : "fmt",
+			"relative-directory" : "src",
+			"source" : "N:/User_Space/User_Documents/Git_Clones/Tool_N/External/FMT/src/fmt.cc",
+			"type" : "CXX_MODULES",
+			"visibility" : "PUBLIC"
+		}
+	},
+	"database-info" : null,
+	"dir-cur-bld" : "N:/User_Space/User_Documents/Git_Clones/Tool_N/Build/Debug/External/FMT",
+	"dir-cur-src" : "N:/User_Space/User_Documents/Git_Clones/Tool_N/External/FMT",
+	"dir-top-bld" : "N:/User_Space/User_Documents/Git_Clones/Tool_N/Build/Debug",
+	"dir-top-src" : "N:/User_Space/User_Documents/Git_Clones/Tool_N",
+	"exports" : [],
+	"forward-modules-from-target-dirs" : [],
+	"include-dirs" : 
+	[
+		"N:\\User_Space\\User_Documents\\Git_Clones\\Tool_N\\External\\FMT\\include"
+	],
+	"language" : "CXX",
+	"linked-target-dirs" : [],
+	"module-dir" : "N:/User_Space/User_Documents/Git_Clones/Tool_N/Build/Debug/External/FMT/CMakeFiles/fmt-module.dir",
+	"sources" : {}
+}

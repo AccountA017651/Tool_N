@@ -1,0 +1,19 @@
+{
+	"modules" : 
+	{
+		"fmt" : 
+		{
+			"bmi" : "N:/User_Space/User_Documents/Git_Clones/Tool_N/Build/Debug/External/FMT/CMakeFiles/fmt-module.dir/fmt.pcm",
+			"is-private" : false
+		}
+	},
+	"references" : 
+	{
+		"fmt" : 
+		{
+			"lookup-method" : "by-name",
+			"path" : "External/FMT/CMakeFiles/fmt-module.dir/fmt.pcm"
+		}
+	},
+	"usages" : {}
+}

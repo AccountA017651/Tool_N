@@ -1,0 +1,3 @@
+N:/User_Space/User_Documents/Git_Clones/Tool_N/Build/Debug/CMakeFiles/Tool_N.dir
+N:/User_Space/User_Documents/Git_Clones/Tool_N/Build/Debug/CMakeFiles/edit_cache.dir
+N:/User_Space/User_Documents/Git_Clones/Tool_N/Build/Debug/CMakeFiles/rebuild_cache.dir

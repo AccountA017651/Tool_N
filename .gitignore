@@ -1,3 +1,4 @@
 .vscode/
 c_app_properties.json
 settings.json
+CMakePresets.json

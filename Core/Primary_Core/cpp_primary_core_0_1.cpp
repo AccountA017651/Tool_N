@@ -10,6 +10,10 @@
 #include "Miscellaneous_Panel/Crasher_Utility/crasher_utility.hpp"
 #include "Miscellaneous_Panel/Long_Outputs_Utility/help_command_long_print_utility.hpp"
 #include "Obtainer_Panel/CPU_Architecture_Obtainer_Utility/cpu_architecture_obtainer_utility.hpp"
+#include "Exit_Type_Utility/exit_type_utility.hpp"
+#include "Computer_Vision_Panel/Webcam_Opener_Utility/webcam_opener_utility.hpp"
+#include "Computer_Vision_Panel/Basic_Face_Detection_Utility/basic_face_detection_utility.hpp"
+
 
 int main(int argc, char* argv[]) {
     std::string os_name = OSOU::Obtain_OS();
@@ -40,7 +44,9 @@ int main(int argc, char* argv[]) {
         {"Misc-Unpredictable-Terminate-3",    [&](){ CHR::UNDN_BHVR::Volatile_Assembly_Illegal_Instruction(); } },
         // Info commands
         {"Info-CPU-Architecture",             [&](){ std::print("CPU Architecture: {}", cpu_architecture_name); }},
-        {"Info-Operating-System",             [&](){ std::print("OS name: {}\n", os_name); }}
+        {"Info-Operating-System",             [&](){ std::print("OS name: {}\n", os_name); }},
+        {"Computer-Vision-Open-Webcam",       [&](){ CVP::WOU::Open_Webcam(); }},
+        {"Computer-Vision-Face-Recognition",  [&](){ CVP::BFDU::Face_Recognition_Webcam(); }}
     };
 
 

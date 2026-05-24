@@ -36,6 +36,10 @@ namespace TCU {
         std::print("{}{}{}", TCU_ASCII_Values::ANSI_FOREGROUND_COLOR_RED, msg, TCU_ASCII_Values::ANSI_FOREGROUND_COLOR_RESET);
     }
 
+    inline void Terminal_Failure(const std::string& msg) {
+        std::print("{}{}{}", TCU_ASCII_Values::ANSI_FOREGROUND_COLOR_RED, msg, TCU_ASCII_Values::ANSI_FOREGROUND_COLOR_RESET);
+    }
+
     inline void Terminal_Info(const std::string& msg) {
         std::print("{}{}{}", TCU_ASCII_Values::ANSI_FOREGROUND_COLOR_BLUE, msg, TCU_ASCII_Values::ANSI_FOREGROUND_COLOR_RESET);
     }

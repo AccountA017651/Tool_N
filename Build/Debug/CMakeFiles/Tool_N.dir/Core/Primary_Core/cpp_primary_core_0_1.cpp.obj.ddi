@@ -1,0 +1,9 @@
+{
+  "revision": 0,
+  "rules": [
+    {
+      "primary-output": "CMakeFiles\\Tool_N.dir\\Core\\Primary_Core\\cpp_primary_core_0_1.cpp.obj"
+    }
+  ],
+  "version": 1
+}
