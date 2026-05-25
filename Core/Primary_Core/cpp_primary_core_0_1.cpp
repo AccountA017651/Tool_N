@@ -13,11 +13,13 @@
 #include "Exit_Type_Utility/exit_type_utility.hpp"
 #include "Computer_Vision_Panel/Webcam_Opener_Utility/webcam_opener_utility.hpp"
 #include "Computer_Vision_Panel/Basic_Face_Detection_Utility/basic_face_detection_utility.hpp"
+#include "Obtainer_Panel/RAM_Amount_Obtainer_Utility/ram_amount_obtainer_utility.hpp"
 
 
 int main(int argc, char* argv[]) {
-    std::string os_name = OSOU::Obtain_OS();
-    std::string cpu_architecture_name = CPUARCHOU::Obtain_CPU_Architecture();
+    std::string os_name = OBTP::OSOU::Obtain_OS();
+    std::string cpu_architecture_name = OBTP::CPUARCHOU::Obtain_CPU_Architecture();
+    auto total_ram_amount = OBTP::RAOU::Obtain_RAM_Amount();
     bool command_used = false;
     bool main_running = true;
 
@@ -47,6 +49,7 @@ int main(int argc, char* argv[]) {
             // Info commands
             {"Info-CPU-Architecture",             [&](){ std::print("CPU Architecture: {}", cpu_architecture_name); }},
             {"Info-Operating-System",             [&](){ std::print("OS name: {}\n", os_name); }},
+            {"Info-Total-RAM-Amount-Bytes",             [&](){ std::print("Total RAM Amount: {}\n", total_ram_amount); }},
             {"Computer-Vision-Open-Webcam",       [&](){ CVP::WOU::Open_Webcam(); }},
             {"Computer-Vision-Face-Recognition",  [&](){ CVP::BFDU::Face_Recognition_Webcam(); }}
         };
