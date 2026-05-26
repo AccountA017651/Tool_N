@@ -49,7 +49,10 @@ int main(int argc, char* argv[]) {
             // Info commands
             {"Info-CPU-Architecture",             [&](){ std::print("CPU Architecture: {}", cpu_architecture_name); }},
             {"Info-Operating-System",             [&](){ std::print("OS name: {}\n", os_name); }},
-            {"Info-Total-RAM-Amount-Bytes",             [&](){ std::print("Total RAM Amount: {}\n", total_ram_amount); }},
+            {"Info-Total-RAM-Amount-Bytes",       [&](){ std::print("Total RAM Amount: {} {}\n", total_ram_amount, "B"); }},
+            {"Info-Total-RAM-Amount-KB",          [&](){ std::print("Total RAM Amount: {} {}\n", total_ram_amount / 1000, "KB"); }},
+            {"Info-Total-RAM-Amount-MB",          [&](){ std::print("Total RAM Amount: {} {}\n", total_ram_amount / 1000 / 1000, "MB"); }},
+            {"Info-Total-RAM-Amount-GB",          [&](){ std::print("Total RAM Amount: {} {}\n", total_ram_amount / 1000 / 1000 / 1000, "GB"); }},
             {"Computer-Vision-Open-Webcam",       [&](){ CVP::WOU::Open_Webcam(); }},
             {"Computer-Vision-Face-Recognition",  [&](){ CVP::BFDU::Face_Recognition_Webcam(); }}
         };
