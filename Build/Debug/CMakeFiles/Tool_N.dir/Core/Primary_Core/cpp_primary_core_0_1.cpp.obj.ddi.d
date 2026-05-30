@@ -279,15 +279,15 @@ CMakeFiles\Tool_N.dir\Core\Primary_Core\cpp_primary_core_0_1.cpp.obj.ddi: \
   C:\Program\ Files\Microsoft\ Visual\ Studio\18\Community\VC\Tools\MSVC\14.51.36231\include\map \
   C:\Program\ Files\Microsoft\ Visual\ Studio\18\Community\VC\Tools\MSVC\14.51.36231\include\xtree \
   C:\Program\ Files\Microsoft\ Visual\ Studio\18\Community\VC\Tools\MSVC\14.51.36231\include\xnode_handle.h \
-  C:\Program\ Files\Microsoft\ Visual\ Studio\18\Community\VC\Tools\MSVC\14.51.36231\include\functional \
   C:\Program\ Files\Microsoft\ Visual\ Studio\18\Community\VC\Tools\MSVC\14.51.36231\include\unordered_map \
   C:\Program\ Files\Microsoft\ Visual\ Studio\18\Community\VC\Tools\MSVC\14.51.36231\include\xhash \
   C:\Program\ Files\Microsoft\ Visual\ Studio\18\Community\VC\Tools\MSVC\14.51.36231\include\list \
   C:\Program\ Files\Microsoft\ Visual\ Studio\18\Community\VC\Tools\MSVC\14.51.36231\include\vector \
+  C:\Program\ Files\Microsoft\ Visual\ Studio\18\Community\VC\Tools\MSVC\14.51.36231\include\functional \
+  C:\Program\ Files\Microsoft\ Visual\ Studio\18\Community\VC\Tools\MSVC\14.51.36231\include\string \
   N:\User_Space\User_Documents\Git_Clones\Tool_N\Toolbox\Central_Versioning_Utility\central_versioning_utility.hpp \
   N:\User_Space\User_Documents\Git_Clones\Tool_N\Toolbox\Obtainer_Panel\OS_Obtainer_Utility\os_obtainer_utility_0_1.hpp \
   N:\User_Space\User_Documents\Git_Clones\Tool_N\Toolbox\Terminal_Color_Utility\terminal_color_utility.hpp \
-  C:\Program\ Files\Microsoft\ Visual\ Studio\18\Community\VC\Tools\MSVC\14.51.36231\include\string \
   N:\User_Space\User_Documents\Git_Clones\Tool_N\Toolbox\Miscellaneous_Panel\Crasher_Utility\crasher_utility.hpp \
   C:\Program\ Files\Microsoft\ Visual\ Studio\18\Community\VC\Tools\MSVC\14.51.36231\include\unordered_set \
   C:\Program\ Files\Microsoft\ Visual\ Studio\18\Community\VC\Tools\MSVC\14.51.36231\include\algorithm \

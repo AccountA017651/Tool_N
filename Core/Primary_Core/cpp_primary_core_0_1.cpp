@@ -2,7 +2,9 @@
 #include <fstream>
 #include <print>
 #include <map>
+#include <unordered_map>
 #include <functional>
+#include <string>
 
 #include "Central_Versioning_Utility/central_versioning_utility.hpp"
 #include "Obtainer_Panel/OS_Obtainer_Utility/os_obtainer_utility_0_1.hpp"
@@ -30,12 +32,14 @@ int main(int argc, char* argv[]) {
         }
 
         // Flag handler
-        std::unordered_map<std::string, std::function<void()>> flag_map = {
+        std::unordered_map<std::string, std::function<void(const std::string&)>> flag_map = {
             // QoL flags
-            {"--version", [&](){ std::print("Tool_N version: {}.{}.{}.{}\n", CVU::VERSION_MAJOR, CVU::VERSION_MINOR, CVU::VERSION_FIX, CVU::VERSION_STAGE); }},
-            {"-v",        [&](){ std::print("Tool_N version: {}.{}.{}.{}\n", CVU::VERSION_MAJOR, CVU::VERSION_MINOR, CVU::VERSION_FIX, CVU::VERSION_STAGE); }},
-            {"--help",    [&](){ LN_PRINT::Help_Command_Output(); }},
-            {"-h",        [&](){ LN_PRINT::Help_Command_Output(); }}
+            {"--version", [&](const std::string&){ std::print("Tool_N version: {}.{}.{}.{}\n", CVU::VERSION_MAJOR, CVU::VERSION_MINOR, CVU::VERSION_FIX, CVU::VERSION_STAGE); }},
+            {"-v",        [&](const std::string&){ std::print("Tool_N version: {}.{}.{}.{}\n", CVU::VERSION_MAJOR, CVU::VERSION_MINOR, CVU::VERSION_FIX, CVU::VERSION_STAGE); }},
+            {"--help",    [&](const std::string&){ LN_PRINT::Help_Command_Output(); }},
+            {"-h",        [&](const std::string&){ LN_PRINT::Help_Command_Output(); }},
+            // Flags with values
+            {"--repeat",  [&](const std::string& value){ while (true) std::print("{}", value ); }}
         };
 
         // Command handler
@@ -46,15 +50,15 @@ int main(int argc, char* argv[]) {
             {"Misc-Unpredictable-Terminate-1",    [&](){ CHR::UNDN_BHVR::Null_Pointer_Dereference(42); } },
             {"Misc-Unpredictable-Terminate-2",    [&](){ CHR::UNDN_BHVR::Stack_Overflow(); } },
             {"Misc-Unpredictable-Terminate-3",    [&](){ CHR::UNDN_BHVR::Volatile_Assembly_Illegal_Instruction(); } },
+            {"Misc-Computer-Vision-Open-Webcam",       [&](){ CVP::WOU::Open_Webcam(); }},
+            {"Misc-Computer-Vision-Face-Recognition",  [&](){ CVP::BFDU::Face_Recognition_Webcam(); }},
             // Info commands
             {"Info-CPU-Architecture",             [&](){ std::print("CPU Architecture: {}", cpu_architecture_name); }},
             {"Info-Operating-System",             [&](){ std::print("OS name: {}\n", os_name); }},
             {"Info-Total-RAM-Amount-Bytes",       [&](){ std::print("Total RAM Amount: {} {}\n", total_ram_amount, "B"); }},
             {"Info-Total-RAM-Amount-KB",          [&](){ std::print("Total RAM Amount: {} {}\n", total_ram_amount / 1000, "KB"); }},
             {"Info-Total-RAM-Amount-MB",          [&](){ std::print("Total RAM Amount: {} {}\n", total_ram_amount / 1000 / 1000, "MB"); }},
-            {"Info-Total-RAM-Amount-GB",          [&](){ std::print("Total RAM Amount: {} {}\n", total_ram_amount / 1000 / 1000 / 1000, "GB"); }},
-            {"Computer-Vision-Open-Webcam",       [&](){ CVP::WOU::Open_Webcam(); }},
-            {"Computer-Vision-Face-Recognition",  [&](){ CVP::BFDU::Face_Recognition_Webcam(); }}
+            {"Info-Total-RAM-Amount-GB",          [&](){ std::print("Total RAM Amount: {} {}\n", total_ram_amount / 1000 / 1000 / 1000, "GB"); }}
         };
 
 
@@ -63,7 +67,12 @@ int main(int argc, char* argv[]) {
 
             auto flag_it = flag_map.find(arg);
             if (flag_it != flag_map.end()) {
-                flag_it->second();
+                std::string value;
+                if (index + 1 < argc && std::string(argv[index + 1]).starts_with("-") == false) {
+                    value = argv[++index];
+                }
+
+                flag_it->second(value);
                 continue;
             }
 
