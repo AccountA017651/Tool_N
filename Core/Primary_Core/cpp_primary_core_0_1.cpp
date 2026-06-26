@@ -58,7 +58,12 @@ int main(int argc, char* argv[]) {
             {"Info-Total-RAM-Amount-Bytes",       [&](){ std::print("Total RAM Amount: {} {}\n", total_ram_amount, "B"); }},
             {"Info-Total-RAM-Amount-KB",          [&](){ std::print("Total RAM Amount: {} {}\n", total_ram_amount / 1000, "KB"); }},
             {"Info-Total-RAM-Amount-MB",          [&](){ std::print("Total RAM Amount: {} {}\n", total_ram_amount / 1000 / 1000, "MB"); }},
-            {"Info-Total-RAM-Amount-GB",          [&](){ std::print("Total RAM Amount: {} {}\n", total_ram_amount / 1000 / 1000 / 1000, "GB"); }}
+            {"Info-Total-RAM-Amount-GB",          [&](){ std::print("Total RAM Amount: {} {}\n", total_ram_amount / 1000 / 1000 / 1000, "GB"); }},
+            {"Info-Total-RAM-Amount-KiB",         [&](){ std::print("Total RAM Amount: {} {}\n", total_ram_amount / 1024, "KB"); }},
+            {"Info-Total-RAM-Amount-MiB",         [&](){ std::print("Total RAM Amount: {} {}\n", total_ram_amount / 1024 / 1024, "MB"); }},
+            {"Info-Total-RAM-Amount-GiB",         [&](){ std::print("Total RAM Amount: {} {}\n", total_ram_amount / 1024 / 1024 / 1024, "GB"); }},
+            // Formatting commands
+            {"[NL]",                              [&](){ std::print("\n"); }}
         };
 
 

@@ -1,13 +1,13 @@
 # ninja log v7
-105	3821	8018400129430203	CMakeFiles/Tool_N.dir/Core/Primary_Core/cpp_primary_core_0_1.cpp.obj.ddi	1c37372d6b2302d9
-3822	3887	8018400166594862	CMakeFiles/Tool_N.dir/CXX.dd	a54421a6afad5484
-3822	3887	8018400166594862	CMakeFiles/Tool_N.dir/CXXModules.json	a54421a6afad5484
-3822	3887	8018400166594862	CMakeFiles/Tool_N.dir/Core/Primary_Core/cpp_primary_core_0_1.cpp.obj.modmap	a54421a6afad5484
-3896	18200	8018400167344920	CMakeFiles/Tool_N.dir/Core/Primary_Core/cpp_primary_core_0_1.cpp.obj	e3ca9d5379260b4d
-18202	23046	8018400310406400	N:/User_Space/User_Documents/Git_Clones/Tool_N/Binary/Debug/Tool_N.exe	9c4c165daa848
 66	749	8018401759197776	CMakeFiles/Tool_N.dir/Core/Primary_Core/cpp_primary_core_0_1.cpp.obj.ddi	1c37372d6b2302d9
 750	817	8018401766027278	CMakeFiles/Tool_N.dir/CXX.dd	a54421a6afad5484
 750	817	8018401766027278	CMakeFiles/Tool_N.dir/CXXModules.json	a54421a6afad5484
 750	817	8018401766027278	CMakeFiles/Tool_N.dir/Core/Primary_Core/cpp_primary_core_0_1.cpp.obj.modmap	a54421a6afad5484
 819	8348	8018401766728765	CMakeFiles/Tool_N.dir/Core/Primary_Core/cpp_primary_core_0_1.cpp.obj	e3ca9d5379260b4d
 8350	8637	8018401842030140	N:/User_Space/User_Documents/Git_Clones/Tool_N/Binary/Debug/Tool_N.exe	9c4c165daa848
+114	11093	8018945148981902	CMakeFiles/Tool_N.dir/Core/Primary_Core/cpp_primary_core_0_1.cpp.obj.ddi	1c37372d6b2302d9
+11094	11189	8018945258776797	CMakeFiles/Tool_N.dir/CXX.dd	a54421a6afad5484
+11094	11189	8018945258776797	CMakeFiles/Tool_N.dir/CXXModules.json	a54421a6afad5484
+11094	11189	8018945258776797	CMakeFiles/Tool_N.dir/Core/Primary_Core/cpp_primary_core_0_1.cpp.obj.modmap	a54421a6afad5484
+11201	19654	8018945259852600	CMakeFiles/Tool_N.dir/Core/Primary_Core/cpp_primary_core_0_1.cpp.obj	e3ca9d5379260b4d
+19655	26370	8018945344398647	N:/User_Space/User_Documents/Git_Clones/Tool_N/Binary/Debug/Tool_N.exe	9c4c165daa848
